@@ -1,18 +1,16 @@
 terraform {
- /* cloud {
+  cloud {
     organization = "policy-as-code-training"
     workspaces {
-      name = "policy-dev-iis-student13"
+      name = "policy-dev-sganandh"
+      project = "policy-as-code"
     }
   }
-*/
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 3.28.0"
     }
   }
-  required_version = ">= 0.14.0"
 }
 
 provider "aws" {
